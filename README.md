@@ -1,33 +1,18 @@
-Titanic Machine Learning Competition
-Welcome to the legendary Titanic ML competition on Kaggle! This challenge serves as an excellent entry point into the world of machine learning competitions and provides an opportunity to familiarize yourself with the Kaggle platform.
+**Titanic Machine Learning Competition**
+**Description**
+The Titanic disaster remains one of the most infamous shipwrecks in history. On April 15, 1912, the RMS Titanic sank after hitting an iceberg during its maiden voyage. Tragically, there were not enough lifeboats for all passengers and crew, resulting in the loss of 1,502 lives out of 2,224 onboard.
 
-Description
-The sinking of the Titanic is one of the most infamous shipwrecks in history. On April 15, 1912, during its maiden voyage, the RMS Titanic sank after colliding with an iceberg. Tragically, there were not enough lifeboats for all passengers and crew, resulting in the loss of 1502 lives out of 2224.
+This competition invites participants to build a predictive model to determine the likelihood of survival based on passenger data, including features such as name, age, gender, and socio-economic class. The central question is: "What kinds of people were more likely to survive?"
 
-This competition tasks participants with building a predictive model to answer the question: "What sorts of people were more likely to survive?" using passenger data such as name, age, gender, socio-economic class, etc.
+**Approach
+Model Used**
+For this competition, a Random Forest classifier was employed to predict passenger survival. Random Forest is an ensemble learning method that combines multiple decision trees to improve predictive accuracy and control overfitting.
 
-Getting Started
-To join the competition, click the "Join Competition" button to create an account and gain access to the competition data. You can find more details about the challenge description and accept the competition rules on the Kaggle platform.
+**Model Evaluation**
+The performance of the Random Forest model was evaluated using several metrics:
 
-Recommended Tutorial
-We highly recommend Alexis Cook’s Titanic Tutorial, which provides a step-by-step guide on making your first submission. Additionally, you can use the starter notebook provided to kickstart your project.
-
-How Kaggle’s Competitions Work
-Join the Competition: Read about the challenge description, accept the Competition Rules, and gain access to the competition dataset.
-
-Get to Work: Download the data and build models on it locally or on Kaggle Notebooks, our no-setup, customizable Jupyter Notebooks environment with free GPUs.
-
-Make a Submission: Upload your prediction as a submission on Kaggle and receive an accuracy score.
-
-Check the Leaderboard: See how your model ranks against other participants on the Kaggle leaderboard.
-
-Improve Your Score: Explore the discussion forum to find tutorials and insights from other competitors to enhance your model.
-
-Competition Data
-In this competition, you'll have access to two similar datasets: train.csv and test.csv.
-
-train.csv: Contains details of a subset of the passengers on board (891) and reveals whether they survived or not, known as the "ground truth".
-test.csv: Contains similar information but does not disclose the "ground truth" for each passenger. Your task is to predict these outcomes for the 418 passengers in the test dataset.
-Explore the datasets further in the "Data" tab and submit your model to see where it stands on the Kaggle leaderboard.
-
-For more discussions and insights, join our Kaggle Discord server: https://discord.gg/kaggle
+Accuracy: The proportion of correctly predicted survival outcomes.
+Precision: The proportion of true positive predictions among all positive predictions.
+Recall: The proportion of actual positives correctly identified by the model.
+F1 Score: The harmonic mean of precision and recall, providing a balanced measure of performance.
+Cross-validation was utilized to ensure the model's reliability and generalizability, helping to prevent overfitting and validate its effectiveness on unseen data.
